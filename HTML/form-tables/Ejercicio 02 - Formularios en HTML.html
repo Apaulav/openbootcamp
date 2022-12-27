@@ -4,10 +4,22 @@
     <title>Formulario</title>
 </head>
 <body>
-    <form>
+    <form action="/" method="get">
         <div>
-            <label for="nomusu">Nombre de usuario</label>
-            <input id="nomusu"/>
+            <label for="nomusu">Nombre:</label>
+            <input name="nombre" type="text" id="nomusu"/>
+        </div>
+        <div>
+            <label for="edad">Edad:</label>
+            <input name="edad" type="number" id="edad"/>
+        </div>
+        <div>
+            <label for="favorita">Frase favorita:</label>
+            <textarea name="favorita" id="favorita"></textarea>
+        </div>
+        <div>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Resetear">
         </div>
     </form>
 </body>
